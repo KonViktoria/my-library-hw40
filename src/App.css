@@ -42,7 +42,7 @@ ul {
     gap: 20px;
 }
 
-li {
+ .card{
     background-color: white;
     padding: 20px;
     border-radius: 12px;
