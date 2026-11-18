@@ -1,12 +1,12 @@
- import {BooksCard}  from './components/BookCard.jsx'
+import {BooksCard}  from './BookCard.jsx'
 
-export const BookList = ({books}) => {
-
+export const BookList = ({books,genre}) => {
+      const   filteredBooks =books.filter(book => book.genre === genre)
     return (
         <ul>
-            {books.map((book) => (
+            {filteredBooks.map((book) => (
                 <li key={book.id}>
-                    <BooksCard book={book} />
+                    <BooksCard book={book}  />
                 </li>
             ))}
         </ul>
