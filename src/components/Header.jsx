@@ -1,3 +1,7 @@
-export const Header =()=>{
-    return
-}
+export const Header = () => {
+    return (
+        <header>
+      <h1>Электронная библиотека</h1>
+    </header>
+    );
+};
